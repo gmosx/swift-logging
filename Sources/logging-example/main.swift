@@ -1,8 +1,8 @@
 import Logging
 
-//Logger.delegate = PrintLogger(level: .debug)
+//Logger.level = .debug
 
-Logger.level = .debug
+Logger.delegate = PrintLogger(level: .debug, showLocation: true)
 
 Logger.info("Hello world")
 Logger.warning("This is a warning")
